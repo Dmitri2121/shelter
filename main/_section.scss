@@ -1,0 +1,34 @@
+.section__content {
+    display: flex;
+    @extend %content-width-center;
+    .section__box {
+        margin-top: 204px;
+        margin-left: 7px;
+        .section__title {
+            width: 310px;
+            margin-bottom: 42px;
+            @include font-text(Georgia, normal, 400, 44px, 130%, 0, #FFFFFF);
+        }
+        
+        .section__text {
+            width: 460px;
+            @include font-text(Arial, normal, 400, 15px, 160%, 0, #CDCDCD)
+        }
+    
+        .section__button {
+            margin-top: 27px;
+            width: 207px;
+            height: 52px;
+            background: #F1CDB3;
+            border-radius: 100px;
+            border: none;
+            @include font-text(Georgia, normal, 400, 17px, 130%, 0.06em, #292929)
+        }
+    }
+    .section__pic {
+        margin-top: 74px;
+        margin-left: 41px;
+    }
+    
+}
+

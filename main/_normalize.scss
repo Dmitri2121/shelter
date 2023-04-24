@@ -1,0 +1,17 @@
+html { 
+    box-sizing: border-box; 
+    scroll-behavior: smooth; 
+}
+  
+body { 
+    margin: 0px; 
+}
+  
+*, ::before, ::after { 
+    box-sizing: inherit;
+}
+
+%content-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}

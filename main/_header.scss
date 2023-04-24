@@ -1,0 +1,76 @@
+//ПЕРЕМЕННЫЕ
+
+//ШАБЛОНЫ
+
+%content-width-center {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+//МИКСИНЫ 
+
+@mixin font-text($font-family, $font-style, $font-weight, $font-size, $line-height, $letter-spacing, $color) {
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    color: $color;
+}
+
+// HEADER
+
+.header {
+    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    @extend %content-width-center;
+        .header__logo {
+            margin-top: 30px;
+            margin-left: 8px;
+        }
+        .header__title {
+            margin: 0;
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            letter-spacing: 0.06em;
+            color: #F1CDB3;
+        }
+        .header__subtitle {
+            margin-top: 8px;
+            margin-left: 4px;
+            font-family: 'Arial';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 15px;
+            letter-spacing: 0.1em;
+            color: #FFFFFF;
+        }        
+}
+
+.header__box {
+    display: flex;
+    .header__item {
+        list-style-type: none;
+        padding-left: 33px;
+        padding-top: 31px;
+        .header__link {
+            text-decoration: none;
+            font-family: 'Arial';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 160%;
+            color: #FAFAFA;
+        }
+    }
+
+}
+// HEADER

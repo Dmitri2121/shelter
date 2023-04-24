@@ -1,0 +1,30 @@
+.about__content {
+    @extend %content-width-center;
+    height: 588px;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    .about__pic {
+        margin-bottom: 16px;
+    }
+    
+    .about__text {
+        margin-left: 120px;
+        margin-right: 166px;
+        margin-bottom: 79px;
+        height: 380px;
+
+        .about__subtitle {
+            width: 370px;
+            margin-top: 31px;
+            margin-bottom: 0;
+            @include font-text(Georgia, normal, 400, 35px, 130%, 0.06em, #545454);
+        }
+        .about__title {
+            width: 430px;
+            margin-bottom: 0;
+            margin-top: 24px;
+            @include font-text(Arial, normal, 400, 15px, 160%, null, #4C4C4C);
+        }
+    }
+}

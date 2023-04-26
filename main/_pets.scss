@@ -1,0 +1,57 @@
+.pets {
+    background: #F6F6F6;
+    .pets__content {
+        @extend %content-width-center;
+        height: 877px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .pets__title {
+            margin-top: 80px;
+            @include font-text(Georgia, normal, 400, 35px, 130%, 0.06em, #545454);
+            width: 400px;
+            text-align: center;
+        }
+        .pets__block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            .pets__arrow {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 52px;
+                height: 52px;
+                border: 2px solid #F1CDB3;
+                border-radius: 100px;
+            }
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #FAFAFA;
+            .pets__card-title {
+                text-align: center;
+                @include font-text(Georgia, normal, 400, 20px, 23px, 0.06em, #545454);
+            }
+            .pets__button {
+                @include font-text(Georgia, normal, 400, 17px, 130%, 0.06em, #292929);
+                border: 2px solid #F1CDB3;
+                border-radius: 100px;
+                width: 187px;
+                height: 52px;
+                background: #FAFAFA;
+            }
+        }
+        .pets__button2 {
+            @include font-text(Georgia, normal, 400, 17px, 130%, 0.06em, #292929);
+            background: #F1CDB3;
+            border-radius: 100px;
+            border: none;
+            width: 261px;
+            height: 52px;
+        }
+    }
+}
